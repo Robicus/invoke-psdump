@@ -1,3 +1,4 @@
+
 # invoke-psdump
 
 ## Introduction
@@ -23,9 +24,16 @@ I've been asked about the code several times, and wanted to (finally) take advan
 
 ## Getting Started
 
+### Pre-Reqs
+
 1.  Download/clone the project.  Navigate to the primary project directory, i.e., C:\Tools\PSDump
-2.  Edit the first few lines of "PSDump.ps1" to ensure that the file paths are correct
-3.  Execute "PSDump.ps1" :)
+2.  Install WinPcap
+3.  Make sure you have a copy of "WinDump.exe" in the "PSDump\Tools" directory
+
+### Running Invoke-PSDump
+
+1.  Edit the first few lines of "PSDump.ps1" to ensure that the file paths are correct
+2.  Execute "PSDump.ps1" :)
 
 ### Examples
 
