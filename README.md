@@ -16,7 +16,7 @@ Here's an example scenario.  You want to search through a packet capture looking
 * \WinDump.exe -r C:\Tools\PSDump\Captures\SkypeIRC.cap -nt (ip) and (ip[6]=64)
 
 The same can be achieved, with additional text searching, with Invoke-WinDump:
-* Invoke-WinDump -File $skypeIRCPCAP -DF $true -Pattern "freenode.net"
+* .\Invoke-WinDump -File $skypeIRCPCAP -DF $true -Pattern "freenode.net"
 
 Invoke-PSDump is still considered proof-of-concept code that was originally created during graduate research that was conducted with SANS Technology Institute.  My whitepaper can be found here:  https://www.sans.org/reading-room/whitepapers/intrusion/leverage-powershell-create-user-friendly-version-windump-36642
 
@@ -36,10 +36,10 @@ I've been asked about the code several times, and wanted to (finally) take advan
 
 ### Examples
 
-1. .\Invoke-WinDump -File $skypeIRCPCAP -DF $true -Pattern "freenode.net"
+1. .\Invoke-WinDump -File .\Captures\SkypeIRC.cap -DF $true -Pattern "freenode.net"
 
-2. .\Invoke-WinDump -File $teardropPCAP -MF $true
+2. .\Invoke-WinDump -File .\Captures\teardrop.cap -MF $true
 
-3. .\Invoke-WinDump -File $nb6startupPCAP -TCPFlags "SYN"
+3. .\Invoke-WinDump -File .\Captures\nb6-startup.pcap -TCPFlags "SYN"
 
 4. .\Invoke-WinDump -Files $files -TCPFlags "ACK,PUSH"
