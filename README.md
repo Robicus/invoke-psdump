@@ -26,21 +26,20 @@ I've been asked about the code several times, and wanted to (finally) take advan
 
 ### Pre-Reqs
 
-1.  Download/clone the project.  Navigate to the primary project directory, i.e., C:\Tools\PSDump
+1.  Download/clone the project.  Navigate to the primary project directory, i.e., C:\Tools\invoke-psdump-master\Invoke-PSDump
 2.  Install WinPcap
-3.  Make sure you have a copy of "WinDump.exe" in the "PSDump\Tools" directory
+3.  Make sure you download and put a copy of "WinDump.exe" in the "Invoke-PSDump\Tools" directory
 
 ### Running Invoke-PSDump
 
-1.  Edit the first few lines of "PSDump.ps1" to ensure that the file paths are correct
 2.  Execute "PSDump.ps1" :)
 
 ### Examples
 
-1. Invoke-WinDump -File $skypeIRCPCAP -DF $true -Pattern "freenode.net"
+1. .\Invoke-WinDump -File $skypeIRCPCAP -DF $true -Pattern "freenode.net"
 
-2. Invoke-WinDump -File $teardropPCAP -MF $true
+2. .\Invoke-WinDump -File $teardropPCAP -MF $true
 
-3. Invoke-WinDump -File $nb6startupPCAP -TCPFlags "SYN"
+3. .\Invoke-WinDump -File $nb6startupPCAP -TCPFlags "SYN"
 
-4. Invoke-WinDump -Files $files -TCPFlags "ACK,PUSH"
+4. .\Invoke-WinDump -Files $files -TCPFlags "ACK,PUSH"
